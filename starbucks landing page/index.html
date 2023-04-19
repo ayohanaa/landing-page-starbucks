@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header class="cabecalho">
+            <a href="#" class="logo"><img src="images/logo (1).png"></a>
+            <ul class="cabecalho__menu">
+                <li><a href="#" class="texto">Home</a></li>
+                <li><a href="#" class="texto">Menu</a></li>
+                <li><a href="#" class="texto">What's new</a></li>
+                <li><a href="#" class="texto">Contact</a></li>
+             </ul>
+        </header>
+        <div class="conteudo">
+            <div class="conteudo__texto">
+                <h2>It's not just Coffe<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, error quaerat amet doloremque accusantium architecto esse et laborum repudiandae temporibus.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="conteudo__imagem">
+                <img src="images/img1.png" class="imagem__starbucks">
+            </div>
+            <ul class="copinhos">
+                <li><img src="images/thumb1.png" class="roxo" onclick="mudaImagem('images/img1.png');changeCirculoColor('#017143')"></li>
+                <li><img src="images/thumb2.png" class="roxo" onclick="mudaImagem('images/img2.png');changeCirculoColor('#eb7495')"></li>
+                <li><img src="images/thumb3.png" onclick="mudaImagem('images/img3.png');changeCirculoColor('#d752b1')"></li>
+            </ul>
+            <ul class="redes">
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function mudaImagem(eba){
+            document.querySelector('.imagem__starbucks').src = eba;
+        }
+
+        function changeCirculoColor(color){
+            const circulo = document.querySelector('.circulo');
+            circulo.style.background = color;
+        }
+    </script>
+</body>
+</html>
